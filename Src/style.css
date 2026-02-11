@@ -7,17 +7,9 @@
     height:30px;
     display: block;
     border-spacing: 3cm;
+    box-sizing: border-box;
  }
- .password-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 10px;
- }
- .password-row .input {
-    width: 320px;
-    margin-bottom: 0;
- }
+ 
  body {
     display: flex;
     flex-direction: column;
@@ -25,6 +17,25 @@
       height: 100vh;
       justify-content: center;
       background-color: #f0f0f0;
+    
+ }
+ .form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 400px;
+ }
+ .password-container {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   margin-bottom: 10px;
+ }
+ .password-container .input {
+   width: 400px;
+   flex: 0 0 400px;
+    margin-bottom: 0;
+   padding-right: 0;
  }
  h1 {
     font-family: 'Arial', sans-serif;
@@ -44,8 +55,10 @@
    
  }
  .toggle-btn {
+   position: static;
+   transform: none;
     font-size: 14px;
-    padding: 6px 10px;
+    padding: 4px 8px;
     border-radius: 6px;
     background-color: #555;
  }
