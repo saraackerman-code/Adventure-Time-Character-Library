@@ -19,16 +19,23 @@
       background-color: #f0f0f0;
     
  }
+ .form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 400px;
+ }
  .password-container {
-    position: relative;
-    width: 400px;
-    margin-bottom: 0px;
-    margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   margin-bottom: 10px;
  }
  .password-container .input {
-    width: 100%;
+   width: 400px;
+   flex: 0 0 400px;
     margin-bottom: 0;
-    padding-right: 70px;
+   padding-right: 0;
  }
  h1 {
     font-family: 'Arial', sans-serif;
@@ -48,10 +55,8 @@
    
  }
  .toggle-btn {
-    position: absolute;
-    right: 6px;
-    top: 50%;
-    transform: translateY(-50%);
+   position: static;
+   transform: none;
     font-size: 14px;
     padding: 4px 8px;
     border-radius: 6px;
