@@ -1,33 +1,34 @@
 <!DOCTYPE html> 
 <html>
+
 <head>
  <title>Adventure Time Character Library</title>
  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Adventure Time Character Library</h1>
+
+    <h1 id="TitleAdventureTime">Adventure Time Character Library</h1>
+
  <div class="form">
     <input placeholder="Username" type="text" class ="input" >
+
     <div class="password-container">
        <input placeholder="Password" type="password" class="input" id="password">
        <button type="button" class="toggle-btn" id="togglePassword">Show</button>
     </div>
-    <button type="button">Login</button>
+<button onclick="location.href ='finn.html'">Login</button>
  </div>
- <script>
+
+<script>
     const passwordInput = document.getElementById('password');
     const toggleButton = document.getElementById('togglePassword');
-
-    toggleButton.addEventListener('click', () => {
-        const isHidden = passwordInput.type === 'password';
+toggleButton.addEventListener('click', () => {
+const isHidden = passwordInput.type === 'password';
         passwordInput.type = isHidden ? 'text' : 'password';
         toggleButton.textContent = isHidden ? 'Hide' : 'Show';
     });
  </script>
-<img src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fa3b628f-d10c-4222-b9b0-50756602dab7/dg48pyw-682de726-2e5a-4c1d-81a0-5628cc803241.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9mYTNiNjI4Zi1kMTBjLTQyMjItYjliMC01MDc1NjYwMmRhYjcvZGc0OHB5dy02ODJkZTcyNi0yZTVhLTRjMWQtODFhMC01NjI4Y2M4MDMyNDEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.DbzzVFC4Ni8b7fmZFfwOa22jY1aVZJGk1LnepXyI6DA" width="90" height="90" alt="Jake the dog">
-<img src = "https://freepngimg.com/thumb/adventure_time/127791-picture-finn-adventure-time-download-free-image.png" width="90" height="110" alt="Finn the human" style="position:absolute; top:50px; left:50px;">
-<img src="https://cdn.stickers.gg/stickers/1469-bmo-sitting.png" style="position: absolute; width: 170px; height:200px; top: 500px; left: 150px;" alt="BMO">
-<img src="https://mystickermania.com/cdn/stickers/adventure-time/at-marceline-hair-dryer-512x512.png" style="position: absolute; width: 190px; height: 210px; top: 100px; left: 600px;" alt="Marceline the vampire queen">
-<img src="https://p7.hiclipart.com/preview/242/749/267/marceline-the-vampire-queen-ice-king-finn-the-human-jake-the-dog-cartoon-adventure-time-thumbnail.jpg" style="position: absolute; width: 90 px; height: 190 px; top: 400 px; left: 600px;" alt="Adventure Time House">
+
 </body>
 </html>
