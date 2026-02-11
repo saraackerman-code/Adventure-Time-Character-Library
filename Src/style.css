@@ -14,9 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-      height: 100vh;
       justify-content: center;
-      background-color: #f0f0f0;
     
  }
  .form {
@@ -45,6 +43,7 @@
  }
  button {
     font-family: 'Arial', sans-serif;
+    align-self: center;
     font-size: 20px;
     padding: 10px 20px;
     background-color: #e71c99;
@@ -62,3 +61,39 @@
     border-radius: 6px;
     background-color: #555;
  }
+ .back-forth {
+    position: absolute;
+    transform: translateY(-80%);
+ }
+ #finnMain {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+ }
+#next {
+      width: 50px;
+      height: auto;
+      align-self: flex-end;
+      cursor: pointer;
+   }
+#back {
+      width: 50px;
+      height: auto;
+      align-self: flex-start;
+      cursor: pointer;
+      
+   }
+#TitleAdventureTime {
+      font-family: 'Arial', sans-serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      margin-top: 300px;
+   }
+#TitleFinn {
+      font-family: 'Arial', sans-serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+   }
