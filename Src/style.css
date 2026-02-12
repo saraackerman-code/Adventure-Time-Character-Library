@@ -1,104 +1,137 @@
 
- .input {
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
-    margin-bottom: 10px;
-    width: 400px;
-    height:30px;
-    display: block;
-    border-spacing: 3cm;
-    box-sizing: border-box;
- }
- 
- body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      justify-content: center;
-    
- }
- .form {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 400px;
- }
- .password-container {
+.input {
+   font-family: 'Arial', sans-serif;
+   font-size: 20px;
+   margin-bottom: 10px;
+   width: 400px;
+   height: 30px;
+   display: block;
+   border-spacing: 3cm;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 400px;
+}
+
+.password-container {
    display: flex;
    align-items: center;
    gap: 8px;
    margin-bottom: 10px;
- }
- .password-container .input {
+}
+
+.password-container .input {
    width: 400px;
-   flex: 0 0 400px;
-    margin-bottom: 0;
+   flex: 400px;
+   margin-bottom: 0;
    padding-right: 0;
- }
- h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-align: center;
- }
- #login-btn {
-    font-family: 'Arial', sans-serif;
-    align-self: center;
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: #e71c99;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-   
- }
- .toggle-btn {
+}
+
+h1 {
+   font-family: 'Arial', sans-serif;
+   font-size: 50px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+#login-btn {
+   font-family: 'Arial', sans-serif;
+   align-self: center;
+   font-size: 20px;
+   padding: 10px 20px;
+   background-color: #e71c99;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.toggle-btn {
    position: static;
    transform: none;
-    font-size: 14px;
-    padding: 4px 8px;
-    border-radius: 6px;
-    background-color: #555;
-    color: white;
- }
- .back-forth {
+   font-size: 14px;
+   padding: 4px 8px;
+   border-radius: 6px;
+   background-color: #555;
+   color: white;
+}
+
+#TitleAdventureTime {
+   font-family: 'Arial', sans-serif;
+   font-size: 40px;
+   margin-bottom: 20px;
+   text-align: center;
+   margin-top: 300px;
+}
+
+.slider {
+   position: relative;
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.slides {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.slide {
+   width: 100%;
+   max-width: 20%;
+    height: auto;
+}
+
+.slider img {
+   display: none;
+}
+
+img.displaySlide {
+   display: block;
+  
+}
+
+.next {
    position: absolute;
-   transform: translateY(-80%);
+   right: 20%;
+   top: 75%;
+   transform: translateY(-50%);
    background-color: transparent;
    border: none;
    width: 100px;
    height: auto;
-   font-size: 400%;
- }
- #finnMain {
-    width: 300px;
-    height: auto;
-    margin-bottom: 20px;
- }
-#next {
- 
-      align-self: flex-end;
-      cursor: pointer;
-   }
-#back {
+   font-size: 900%;
+   cursor: pointer;
+   color: black;
+}
 
-      align-self: flex-start;
-      cursor: pointer;
-     
-      
-   }
-#TitleAdventureTime {
-      font-family: 'Arial', sans-serif;
-      font-size: 40px;
-      margin-bottom: 20px;
-      text-align: center;
-      margin-top: 300px;
-   }
-#TitleFinn {
-      font-family: 'Arial', sans-serif;
-      font-size: 40px;
-      margin-bottom: 20px;
-      text-align: center;
-      color: rgb(0, 0, 0);
-   }
+.back {
+   position: absolute;
+   left: 20%;
+   top: 75%;
+   transform: translateY(-50%);
+   background-color: transparent;
+   color: black;
+   border: none;
+   width: 100px;
+   height: auto;
+   font-size: 900%;
+   cursor: pointer;
+}
