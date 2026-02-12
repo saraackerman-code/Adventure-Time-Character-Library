@@ -1,10 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Finn the Human</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Character Selection</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <img id = "finnMain" alt = "Finn the Human" src="characters/finn.png">
-        <h1 id="TitleFinn">Finn the Human</h1> 
-    <button id ="next" class ="back-forth" alt = "Next" > &#x1F782;</button> 
-    <button id ="back" class ="back-forth" alt = "Previous" > &#x1F780;</button>
+<body> 
+<div class="slider">
+    <div class = "slides">
+           <img class = "slide" src = "characters/finn.png" alt = "Finn the Human">
+           <img class = "slide" src = "characters/jake.png" alt = "Jake the Dog">
+           <img class = "slide" src = "characters/iceKing.png" alt = "Ice King">
+           <img class = "slide" src = "characters/marceline.png" alt = "Marceline the Vampire Queen">
+           <img class = "slide" src = "characters/ladyRainicorn.png" alt = "Lady Rainicorn">
+           <img class = "slide" src = "characters/prismo.png" alt = "Prismo">        
+    </div>
+    <button class = "next" onclick= "nextSlide()"  alt = "Next">  &#x1F782 </button> 
+    <button class = "back" onclick= "prevSlide()"  alt = "Previous"> &#x1F780</button>
+</div>
+
+    <script src ="CharacterSlider.js"></script>
+
+    </body>
+</html>
